@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <!--AngularJS and UI-Router-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+    <!--Vis.js and FontAwesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+
+    <!--Bootstrap and Theme-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js"></script>
+    <script src="style/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="style/bootstrap/dist/css/bootstrap.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.0.0/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-p8bH4RlA/kdF4wbAoep+/6VeOQI2IAWa9zLjTIQbQLv2FuCjX/W/FkdYdeKISDvK" crossorigin="anonymous">
+
+    <!--User Generated Scripts-->
+    <script src="app.module.js"></script>
+    <script src="app.route.js"></script>
+    <script src="home/home.controller.js"></script>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <title>Baylor Baja DAQ</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="home">Baylor Baja DAQ</a>
+            </div>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a ui-sref="home"><i class="fa fa-home"></i> Home</a></li>
+            </ul>
+        </div>
+    </nav>
+<div id="main">
+    <div ui-view></div>
+</div>
+
+</body>
+
+</html>
